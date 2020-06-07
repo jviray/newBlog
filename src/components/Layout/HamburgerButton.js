@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from "./HamburgerButton.module.scss";
 
-const HamburgerButton = ({ clickHandler, clicked }) => {
+const HamburgerButton = ({ clickHandler, isClicked }) => {
   const { btnContainer, hamburgerLine } = styles;
-  const triggered = clicked && styles.triggered;
+  const triggered = isClicked && styles.triggered;
 
   return (
     <button className={`${btnContainer} ${triggered}`} onClick={clickHandler}>

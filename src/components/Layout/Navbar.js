@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className={hamburgerWrap}>
             <HamburgerButton
               clickHandler={onHamburgerClick}
-              clicked={sideDrawerOpen}
+              isClicked={sideDrawerOpen}
             />
           </div>
           <SideDrawer show={sideDrawerOpen} />
