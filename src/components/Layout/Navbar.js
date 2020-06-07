@@ -9,7 +9,7 @@ import styles from "./Navbar.module.scss";
 const Navbar = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
-  const { navContainer, hamburger, brandLink } = styles;
+  const { navContainer, hamburgerWrap, brandLink } = styles;
 
   const onHamburgerClick = () => {
     setSideDrawerOpen(!sideDrawerOpen);
@@ -23,7 +23,7 @@ const Navbar = () => {
     <div>
       <header>
         <nav className={navContainer}>
-          <div className={hamburger}>
+          <div className={hamburgerWrap}>
             <HamburgerButton
               clickHandler={onHamburgerClick}
               clicked={sideDrawerOpen}

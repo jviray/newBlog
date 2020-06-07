@@ -9,8 +9,6 @@ const HamburgerButton = ({ clickHandler, clicked }) => {
   return (
     <button className={`${btnContainer} ${triggered}`} onClick={clickHandler}>
       <div className={hamburgerLine}></div>
-      <div className={hamburgerLine}></div>
-      <div className={hamburgerLine}></div>
     </button>
   );
 };
