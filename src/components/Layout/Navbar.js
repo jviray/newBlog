@@ -22,19 +22,21 @@ const Navbar = () => {
   return (
     <div>
       <header>
-        <nav className={navContainer}>
-          <div className={hamburgerWrap}>
-            <HamburgerButton
-              clickHandler={onHamburgerClick}
-              isClicked={sideDrawerOpen}
-            />
-          </div>
-          <SideDrawer show={sideDrawerOpen} />
-          {sideDrawerOpen && <Backdrop clickHandler={onBackdropClick} />}
-          <Link className={brandLink} to="/">
-            <h1>jonathan viray</h1>
-          </Link>
-        </nav>
+        <div className="wrap">
+          <nav className={navContainer}>
+            <div className={hamburgerWrap}>
+              <HamburgerButton
+                clickHandler={onHamburgerClick}
+                isClicked={sideDrawerOpen}
+              />
+            </div>
+            <SideDrawer show={sideDrawerOpen} />
+            {sideDrawerOpen && <Backdrop clickHandler={onBackdropClick} />}
+            <Link className={brandLink} to="/">
+              <h1>jonathan viray</h1>
+            </Link>
+          </nav>
+        </div>
       </header>
     </div>
   );

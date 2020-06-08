@@ -4,10 +4,12 @@ import Navbar from "./Navbar";
 import styles from "./Layout.module.scss";
 
 const Layout = props => {
+  const { contentWrap } = styles;
+
   return (
-    <div style={{ height: "100%" }}>
+    <div className="wrap">
       <Navbar />
-      <div style={{ marginTop: "7.2rem" }}>{props.children}</div>
+      <div className={contentWrap}>{props.children}</div>
     </div>
   );
 };
