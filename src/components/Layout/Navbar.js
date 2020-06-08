@@ -30,14 +30,15 @@ const Navbar = () => {
                 isClicked={sideDrawerOpen}
               />
             </div>
-            <SideDrawer show={sideDrawerOpen} />
-            {sideDrawerOpen && <Backdrop clickHandler={onBackdropClick} />}
+            {/* Insert non mobile side menu and backdrop */}
             <Link className={brandLink} to="/">
               <h1>jonathan viray</h1>
             </Link>
           </nav>
         </div>
       </header>
+      <SideDrawer show={sideDrawerOpen} />
+      {sideDrawerOpen && <Backdrop clickHandler={onBackdropClick} />}
     </div>
   );
 };
